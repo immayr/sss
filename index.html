@@ -1,1 +1,237 @@
-qwdqwdqwd
+<!DOCTYPE html>
+<html lang="en">
+<style>body {
+  font-family: Arial, sans-serif;
+  background-color: #1c1c1c;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+header.sticky {
+  position: sticky;
+  top: 0;
+  background-color: #111;
+  z-index: 100;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+nav img.logo {
+  max-height: 50px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px;
+}
+
+h1,
+h2 {
+  margin-top: 30px;
+}
+
+section {
+  padding: 30px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
+  margin-bottom: 10px;
+}
+
+.download-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 17px;
+}
+
+.card {
+  background-color: #333;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 300px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 20px;
+}
+
+.card h3 {
+  margin: 0;
+  font-size: 18px;
+  color: #fff;
+}
+
+.download-button {
+  display: inline-block;
+  background-color: #7289DA;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+footer {
+  background-color: #111;
+  padding: 20px;
+  text-align: center;
+}
+
+footer p {
+  margin: 0;
+  color: #fff;
+  font-size: 14px;
+}
+
+header {
+  background-color: #111;
+}
+
+* {
+  text-align: center;
+  }</style><script>
+  
+  
+  // Smooth scrolling animation
+document.addEventListener("DOMContentLoaded", () => {
+  const smoothLinks = document.querySelectorAll(".smooth-scroll");
+  smoothLinks.forEach((link) => {
+    link.addEventListener("click", (e) => {
+      e.preventDefault();
+      const targetId = link.getAttribute("href");
+      document.querySelector(targetId).scrollIntoView({
+        behavior: "smooth",
+      });
+    });
+  });
+});
+
+// Sticky header
+window.addEventListener("scroll", () => {
+  const header = document.querySelector("header");
+  const stickyHeader = document.querySelector(".sticky-header");
+  const headerHeight = header.offsetHeight;
+  if (window.scrollY > headerHeight) {
+    stickyHeader.classList.add("sticky");
+  } else {
+    stickyHeader.classList.remove("sticky");
+  }
+});
+  </script>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Skully's Scripting Server</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js"></script>
+</head>
+
+<body>
+  <header>
+    <nav class="sticky-header">
+      <img src="https://skullyss.vercel.app/DALL·E%202023-06-04%2017.51.19%20-%20SSS,%20logo,%20techy,%20hackdqwdqwding%20style.jpg" alt="Skully's Scripting Server" class="logo">
+      <a href="#home" class="smooth-scroll">Home</a>
+      <a href="#about" class="smooth-scroll">About</a>
+      <a href="#downloads" class="smooth-scroll">Downloads</a>
+      <a href="#discord" class="smooth-scroll">Join Discord</a>
+    </nav>
+  </header>
+
+  <section id="home">
+    <div class="logo">
+    </div>
+    <h1>Welcome to Skully's Scripting Server</h1>
+    <p>We are currently one of the only places providing exploits after the Roblox x Byfron collaboration to stop exploiters. We supply multiple exploits that should suit your needs whether you are a beginner just looking for a simple aimbot, or someone looking for advanced executors with or without keys.</p>
+  </section>
+
+<section id="about">
+  <h2>About Us</h2>
+  <p>Welcome to Skully's Scripting Server! We are a dedicated Roblox scripting group passionate about creating innovative and powerful scripts for Roblox games. Our mission is to provide the Roblox community with high-quality exploits, tools, and resources to enhance their gaming experience.</p>
+  
+  <p>At Skully's Scripting Server, we believe in pushing the boundaries of what's possible within the Roblox platform. Our team of talented developers works tirelessly to develop and maintain a range of exploits and executors that cater to different needs and preferences.</p>
+  
+  <p>With our diverse collection of exploits, including Celestial, Valyse, and Electron, we aim to offer a variety of options to suit different user requirements. Whether you are looking for a free dx9-like exploit like Celestial, a keyless executor like Valyse that works on the Microsoft Store, or a powerful and feature-rich exploit like Electron, we've got you covered.</p>
+  
+  <p>In addition to providing executables, we also foster a vibrant community through our Discord server. By joining our server, you gain access to exclusive resources, updates, and the opportunity to interact with fellow Roblox enthusiasts. We host regular key giveaways for Electron and offer support and assistance to our community members.</p>
+  
+  <p>Skully's Scripting Server was founded on June 4, 2023, by Skully416#4801. We are committed to delivering top-notch exploits and fostering a supportive environment where scripters can learn, collaborate, and thrive. Join us today and take your Roblox scripting journey to the next level!</p>
+</section>
+
+
+  <section id="downloads">
+    <h2>Downloads</h2>
+    <div class="download-cards">
+      <div class="card">
+        <img src="https://skullyss.vercel.app/image_2023-06-05_185927238.png" alt="Celestial">
+        <div class="card-content">
+          <h3>Celestial</h3>
+          <p>Celestial is currently the only exploit working on the normal Roblox client. It is a free dx9-like exploit with no key.</p>
+          <a href="https://skullyss.vercel.app/example.zip" class="download-button">Download</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://skullyss.vercel.app/caca.png" alt="Valyse">
+        <div class="card-content">
+          <h3>Valyse</h3>
+          <p>Valyse is the only keyless executor currently on our website and our Discord server, but the DLL can't execute certain scripts into Roblox. Valyse only works on Microsoft Store.</p>
+          <a href="https://skullyss.vercel.app/example.zip" class="download-button">Download</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://i.imgur.com/CP1Go1m.png" alt="Electron">
+        <div class="card-content">
+          <h3>Electron</h3>
+          <p>Electron is one of the best Roblox exploits currently available, but you need to get a key to use it. We provide keys every day around 6pm EST in our Discord server, which you can join from the link at the bottom of the page.</p>
+          <a href="https://skullyss.vercel.app/example.zip" class="download-button">Download</a>
+        </div>
+      </div>
+ <div class="card">
+        <img src="https://static.vecteezy.com/system/resources/previews/004/243/615/original/creative-coming-soon-teaser-background-free-vector.jpg" alt="Electron">
+        <div class="card-content">
+          <h3>COMING SOON</h3>
+          <p>...</p>
+          <a href="#" class="download-button">Download</a>
+        </div>
+      </div> 
+       <div class="card">
+        <img src="https://static.vecteezy.com/system/resources/previews/004/243/615/original/creative-coming-soon-teaser-background-free-vector.jpg" alt="Electron">
+        <div class="card-content">
+          <h3>COMING SOON</h3>
+          <p>...</p>
+          <a href="#" class="download-button">Download</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="discord">
+    <h2>Join Our Discord</h2>
+    <p>Click the button below to join our Discord server:</p>
+    <a href="https://discord.gg/89vuUvGT28" class="discord-button">Join Discord</a>
+  </section>
+
+  <footer>
+    <p>Copyright &copy SSS 2023</p>
+  </footer>
+</body>
+
+</html>
+
