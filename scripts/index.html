@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Skully's Scripting Server - Script Collection</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #1a1a1a;
+      color: #fff;
+    }
+    .header {
+      background-color: #333;
+      padding: 20px;
+      text-align: center;
+    }
+    .header-logo {
+      max-width: 150px;
+    }
+    .header-title {
+      font-size: 24px;
+      margin-top: 10px;
+      color: #fff;
+    }
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 50px;
+    }
+    .search-container {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    .search-input {
+      padding: 10px;
+      width: 400px;
+      font-size: 16px;
+    }
+    .script-tabs {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 20px;
+    }
+    .script-tab {
+      padding: 10px 20px;
+      background-color: #333;
+      color: #fff;
+      cursor: pointer;
+      margin-right: 10px;
+    }
+    .script-tab.active {
+      background-color: #ff5700;
+    }
+    .script-cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      grid-gap: 20px;
+    }
+    .script-card {
+      background-color: #333;
+      padding: 20px;
+      border-radius: 5px;
+      text-align: center;
+    }
+    .script-card img {
+      max-width: 200px;
+      margin-bottom: 10px;
+    }
+    .script-card h3 {
+      font-size: 20px;
+      margin-bottom: 10px;
+      color: #fff;
+    }
+    .script-card p {
+      color: #aaa;
+      margin-bottom: 20px;
+    }
+    .script-card a {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #ff5700;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="header">
+    <h1 class="header-title">Skully's Scripting Server</h1>
+    <div class="header-navigation">
+      <a class="header-link" href="https://skullyss.vercel.app">Home</a>
+      <a class="header-link" href="https://skullyss.vercel.app/script-collection.html">Script Collection</a>
+      <a class="header-link" href="https://skullyss.vercel.app/download.html">Downloads</a>
+      <a class="header-link" href="https://discord.gg/89vuUvGT28">Join Discord</a>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="search-container">
+      <input type="text" class="search-input" placeholder="Search..." oninput="filterScripts(this.value)">
+    </div>
+
+    <div class="script-cards">
+      <div class="script-card" data-category="all">
+        <img src="https://example.com/script1.jpg" alt="Script 1">
+        <h3>Script 1</h3>
+        <p>Description of Script 1</p>
+        <a href="https://example.com/script1.zip">Download</a>
+      </div>
+      <div class="script-card" data-category="featured">
+        <img src="https://example.com/script2.jpg" alt="Script 2">
+        <h3>Script 2</h3>
+        <p>Description of Script 2</p>
+        <a href="https://example.com/script2.zip">Download</a>
+      </div>
+      <div class="script-card" data-category="popular">
+        <img src="https://example.com/script3.jpg" alt="Script 3">
+        <h3>Script 3</h3>
+        <p>Description of Script 3</p>
+        <a href="https://example.com/script3.zip">Download</a>
+      </div>
+      <div class="script-card" data-category="new">
+        <img src="https://example.com/script4.jpg" alt="Script 4">
+        <h3>Script 4</h3>
+        <p>Description of Script 4</p>
+        <a href="https://example.com/script4.zip">Download</a>
+      </div>
+      <div class="script-card" data-category="new">
+        <img src="https://example.com/script4.jpg" alt="Script 4">
+        <h3>Script 6</h3>
+        <p>Description of Script 5</p>
+        <a href="https://example.com/script5.zip">Download</a>
+      </div>
+          <div class="script-card" data-category="new">
+        <img src="https://example.com/script4.jpg" alt="Script 4">
+        <h3>Script 6</h3>
+        <p>Description of Script 6</p>
+        <a href="https://example.com/script6.zip">Download</a>
+      </div>
+      
+    </div>
+  </div>
+
+  <script>
+    function filterScripts(searchTerm) {
+      const scriptCards = document.querySelectorAll('.script-card');
+      searchTerm = searchTerm.toLowerCase();
+
+      scriptCards.forEach(card => {
+        const scriptName = card.querySelector('h3').innerText.toLowerCase();
+        const scriptDescription = card.querySelector('p').innerText.toLowerCase();
+
+        if (scriptName.includes(searchTerm) || scriptDescription.includes(searchTerm)) {
+          card.style.display = 'block';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    }
+  </script>
+</body>
+
+</html>
